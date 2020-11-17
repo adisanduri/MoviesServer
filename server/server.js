@@ -4,6 +4,7 @@ const path = require('path');
 const logger = require('morgan');
 const movies = require('./movies.json');
 
+
 const app = express();
 app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, 'dist')));
